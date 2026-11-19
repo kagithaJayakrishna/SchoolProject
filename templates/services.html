@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block title%}
+Services
+{% endblock title %}
+{% block content %}
+<p>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+        aria-expanded="false" aria-controls="multiCollapseExample1">Python</a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+        aria-expanded="false" aria-controls="multiCollapseExample2">MySQL</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+        aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Close</button>
+</p>
+<div class="row">
+    <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+                Python is a high-level, general-purpose programming language known for its simple, readable syntax that
+                closely resembles everyday English. Created by Guido van Rossum and first released in 1991, it is free,
+                open-source, and managed by the Python Software Foundation.
+
+                <h1>Key Features</h1>
+                • Easy-to-Read Syntax: Python uses simple keywords and relies on whitespace indentation to organize code
+                blocks rather than curly brackets or semicolons. This allows developers to write programs using fewer
+                lines of code.
+                • Interpreted Execution: Code runs line by line through an interpreter without requiring a separate
+                compilation step. This makes testing and debugging fast.
+                • Cross-Platform Compatibility: Python programs run seamlessly across Windows, macOS, and Linux without
+                needing major code changes.
+                • Multi-Paradigm Support: It supports object-oriented, procedural, and functional programming styles.
+                • Extensive Ecosystem: Python includes a large built-in standard library alongside thousands of
+                third-party packages for specialized tasks.
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                MySQL is an open-source relational database management system (RDBMS) that uses Structured Query
+                Language (SQL) to store, organize, and manage data.
+
+                <h1>Key Characteristics</h1>
+
+                • Relational Structure: It stores data in separate, related tables with rows and columns rather than in
+                a single large container, ensuring data integrity.
+                • Open Source & Oracle Backed: Originally created in 1995, it is freely available and developed,
+                distributed, and supported by Oracle Corporation.
+                • Client-Server Model: Client applications send SQL queries to the MySQL server, which processes them
+                and returns the requested data.
+                • High Performance & Reliability: It is built for speed and scalability, supporting storage engines like
+                InnoDB and MyISAM.
+                • Cross-Platform: It runs across major operating systems including Linux, Windows, macOS, and UNIX.
+
+                MySQL vs. SQL
+
+                • MySQL is the actual software product that manages databases.
+                • SQL (Structured Query Language) is the programming language you write to talk to and query that
+                database.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
