@@ -37,4 +37,30 @@ Home
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Father Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Course</th>
+                <th scope="col">Father's Phone</th>
+                <th scope="col">Fee</th>
+            </tr>
+        </thead>
+        {% for data in data %}
+        <tbody>
+            <tr>
+                <td>{{ data.stu_name }}</td>
+                <td>{{ data.stu_fname }}</td>
+                <td>{{ data.stu_age }}</td>
+                <td>{{ data.stu_class }}</td>
+                <td>{{ data.stu_fphone }}</td>
+                <td>{{ data.stu_fee }}</td>
+            </tr>
+            {% endfor %}scope
+        </tbody>
+    </table>
+</div>
 {% endblock content %}
